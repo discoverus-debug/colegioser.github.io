@@ -1,0 +1,784 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style><meta property="og:title" content="Colegio S.E.R. Girardot – Aquí se aprende haciendo"><meta property="og:description" content="Primaria y bachillerato con máximo 15 estudiantes por salón, aula acuática, Impresión 3D y pantallas interactivas."><meta property="og:image" content="img/hero-1.webp"><meta property="og:type" content="website"><link rel="icon" href="img/logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"School","name":"Colegio S.E.R. – Sistema Educativo Reintegrado","slogan":"Formamos mentes, transformamos futuros","telephone":"+57 300 533 4729","email":"colegiosergirardot@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Calle 35B #22-33, Santa Paula","addressLocality":"Girardot","addressRegion":"Cundinamarca","addressCountry":"CO"},"openingHours":["Mo-Fr 07:00-12:00","Mo-Fr 14:00-16:00","Sa 09:00-12:00"],"sameAs":["https://www.instagram.com/colegiosergirardot/","https://www.tiktok.com/@colegiosergirardot"]}</script><title>Colegio S.E.R. Girardot</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Colegio S.E.R. – Sistema Educativo Reintegrado, Girardot. Primaria y bachillerato con máximo 15 estudiantes por salón, aula acuática, Impresión 3D, MiniConstructores y pantallas interactivas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: bandas a lo ancho que alternan "patio" (claro) y "pizarra" (verde); fotos reales enmarcadas como trabajos colgados en el aula */
+:root{
+  --bg:#f6f8f4; --surface:#ffffff; --ink:#15281f; --muted:#4d6157; --line:#dbe5de;
+  --green:#105c3a; --green-2:#0b4a2e; --leaf:#2f8a5c; --gold:#f2c230; --gold-ink:#3a2c00; --sky:#1f7fbf;
+  --on-green:#f3fbf6; --on-green-muted:#bfe0cd;
+  --font-display:"Fredoka","Trebuchet MS",system-ui,sans-serif;
+  --font-body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --r:18px; --maxw:1180px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1713; --surface:#16211b; --ink:#e7f1eb; --muted:#9fb4a8; --line:#26352d;
+  --green:#0e4d31; --green-2:#0a3a25; --leaf:#5fbf8c; --gold:#f4ca45; --gold-ink:#2b2000; --sky:#5aaee6;
+  --on-green:#eef8f2; --on-green-muted:#a9cfb9; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1713; --surface:#16211b; --ink:#e7f1eb; --muted:#9fb4a8; --line:#26352d;
+  --green:#0e4d31; --green-2:#0a3a25; --leaf:#5fbf8c; --gold:#f4ca45; --gold-ink:#2b2000; --sky:#5aaee6;
+  --on-green:#eef8f2; --on-green-muted:#a9cfb9; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6;margin:0}
+h1,h2,h3{font-family:var(--font-display);line-height:1.1;text-wrap:balance;margin:0;font-weight:600}
+h2{font-size:clamp(30px,4.2vw,46px)}
+h3{font-size:22px}
+p{margin:0}
+a{color:inherit}
+img,video{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{padding-block:clamp(56px,8vw,104px)}
+.band.green{background:var(--green);color:var(--on-green)}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf)}
+.green .eyebrow{color:var(--gold)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:62ch}
+.green .lead{color:var(--on-green-muted)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 16px/1 var(--font-body);padding:15px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--gold-ink)}
+.btn-gold:hover{filter:brightness(1.06)}
+.btn-ghost{border-color:currentColor;background:transparent}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--green-2)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--green-2);color:var(--on-green)}
+.nav{display:flex;align-items:center;gap:18px;min-height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand img{width:46px;height:46px;background:#fff;border-radius:12px;padding:4px;object-fit:contain}
+.brand b{font-family:var(--font-display);font-size:21px;font-weight:600;line-height:1}
+.brand small{display:block;font-size:12px;color:var(--on-green-muted);font-weight:500}
+.menu{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-block:0}
+.menu a{text-decoration:none;padding:8px 6px;border-radius:10px;font-weight:500;font-size:14.5px}
+header .wrap.nav{max-width:1400px}
+.menu a.hl{color:var(--gold)}
+.menu a:hover{background:rgba(255,255,255,.1)}
+.nav .btn{padding:11px 16px;font-size:15px;white-space:nowrap;flex:none}
+.menu a{white-space:nowrap}
+.menu-toggle{display:none;margin-left:auto;background:none;border:2px solid var(--on-green-muted);color:var(--on-green);border-radius:10px;padding:8px 12px;font:600 15px var(--font-body);cursor:pointer}
+@media (max-width:1360px){
+  .menu-toggle{display:block}
+  .menu{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--green-2);padding:8px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px));gap:0}
+  .menu.open{display:flex}
+  .menu a{padding:12px 6px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav .btn.desk{display:none}
+}
+
+/* hero */
+.hero{position:relative;color:#fff;background:#0b2a1c;overflow:hidden}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,30,19,.92) 0%,rgba(6,30,19,.72) 45%,rgba(6,30,19,.25) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-block:clamp(70px,11vw,140px)}
+.hero h1{font-size:clamp(42px,7vw,84px);font-weight:700;max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:clamp(18px,2vw,22px);max-width:46ch;margin-top:20px;color:#dcefe4}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .btn-ghost{color:#fff}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:48px;max-width:900px}
+.fact{background:rgba(255,255,255,.1);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:14px 16px}
+.fact b{display:block;font-family:var(--font-display);font-size:28px;line-height:1.1;color:var(--gold)}
+.fact span{font-size:14px;color:#dcefe4}
+@media (max-width:760px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* split sections */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.split > *{min-width:0}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.stack{display:flex;flex-direction:column;gap:18px}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:8px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.pillar h3{font-size:19px;color:var(--green);display:flex;gap:10px;align-items:center}
+.green .pillar{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.green .pillar h3{color:var(--gold)}
+.pillar p{font-size:15.5px;color:var(--muted);margin-top:6px}
+.green .pillar p{color:var(--on-green-muted)}
+@media (max-width:560px){.pillars{grid-template-columns:1fr}}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--gold);flex:none}
+
+/* polaroid collage */
+.collage{position:relative;aspect-ratio:1/1;max-width:540px;margin-inline:auto;width:100%}
+.pol{position:absolute;background:#fff;padding:10px 10px 34px;border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.25);width:58%}
+.pol img{aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:3px}
+.pol figcaption{position:absolute;bottom:8px;left:12px;right:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:600 14px var(--font-display);color:#24382d}
+.pol:nth-child(1){left:0;top:4%;transform:rotate(-5deg)}
+.pol:nth-child(2){right:0;top:0;transform:rotate(4deg);width:50%}
+.pol:nth-child(3){left:24%;bottom:0;transform:rotate(1.5deg);width:52%}
+
+/* experiences grid */
+.exp-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px;margin-bottom:34px}
+.exp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.exp{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.exp{grid-template-columns:1fr}}
+.card{color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:6px}
+.card h3{font-size:20px}
+.card p{font-size:15px;color:var(--muted)}
+.tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);background:color-mix(in srgb,var(--leaf) 16%,transparent);padding:4px 9px;border-radius:999px}
+
+/* levels */
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+@media (max-width:760px){.levels{grid-template-columns:1fr}}
+.level{position:relative;border-radius:22px;overflow:hidden;min-height:380px;display:flex;align-items:flex-end;color:#fff}
+.level img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.level::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,16,.95) 15%,rgba(5,25,16,.1) 75%)}
+.level .in{position:relative;z-index:1;padding:26px}
+.level h3{font-size:32px}
+.level ul{margin:12px 0 0;padding-left:20px;color:#d7ece0;font-size:15.5px}
+.level .hours{display:inline-block;margin-top:12px;background:var(--gold);color:var(--gold-ink);font-weight:700;font-size:14px;padding:5px 12px;border-radius:999px}
+
+/* videos */
+.videos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:34px}
+@media (max-width:980px){.videos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vid{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden}
+.vid video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.vid p{padding:12px 14px;font-weight:600;font-size:15px}
+.vid p span{display:block;font-weight:400;font-size:13.5px;color:var(--on-green-muted)}
+
+/* efectos al hacer scroll (inspirados en AOS y CountUp.js) */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+header.top{transition:box-shadow .3s}
+header.top.scrolled{box-shadow:0 8px 24px rgba(0,0,0,.22)}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--gold);z-index:200;pointer-events:none}
+@media (prefers-reduced-motion: reduce){.rv{opacity:1;transform:none;transition:none}.medal.gold::after{display:none}}
+/* carrusel de bachillerato (desplazamiento con scroll-snap, inspirado en Embla/Swiper) */
+.bach-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.bach-head h2{font-size:clamp(28px,4vw,44px);max-width:20ch}
+.bach-head .lead{max-width:62ch}
+.bach-nav{display:flex;align-items:center;gap:12px}
+.bach-btn{width:50px;height:50px;border-radius:50%;border:2px solid var(--on-green-muted);background:transparent;color:var(--on-green);font-size:22px;cursor:pointer;transition:background .2s,color .2s}
+.bach-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--gold-ink)}
+.bach-btn:focus-visible,.bach-open:focus-visible,.bach-track:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.bach-count{min-width:62px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums;color:var(--on-green-muted)}
+.bach-track{display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,560px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:30px 2px 14px;scrollbar-width:none;overscroll-behavior-x:contain}
+.bach-track::-webkit-scrollbar{display:none}
+@media (max-width:620px){.bach-track{grid-auto-columns:86%}}
+.bach-slide{margin:0;scroll-snap-align:start;display:grid;gap:10px;align-content:start;min-width:0}
+.bach-open{display:block;padding:0;border:0;background:var(--green-2);border-radius:20px;overflow:hidden;cursor:zoom-in;aspect-ratio:4/3;width:100%}
+.bach-open img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.bach-open:hover img{transform:scale(1.05)}
+.bach-slide figcaption{font-size:15px;color:var(--on-green-muted)}
+.bach-dots{display:flex;gap:8px;justify-content:center;margin-top:8px;flex-wrap:wrap}
+.bach-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);transition:background .2s,width .2s}
+.bach-dots i.on{background:var(--gold);width:22px;border-radius:6px}
+/* results */
+.result{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,40px)}
+@media (max-width:640px){.result{grid-template-columns:1fr}}
+.big{font-family:var(--font-display);font-weight:700;font-size:clamp(64px,10vw,110px);line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}
+.big small{font-size:.32em;color:var(--muted);font-weight:600;display:block;margin-top:8px}
+.src{font-size:13.5px;color:var(--muted);margin-top:12px}
+.res-head{display:grid;gap:10px;max-width:760px}
+.res-head h2{font-size:clamp(28px,4vw,46px)}
+.medals{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.medals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.medals{grid-template-columns:1fr}}
+.medal{position:relative;overflow:hidden;display:grid;gap:4px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px 20px 20px}
+.medal::before{content:"";position:absolute;inset:0 0 auto;height:6px;background:var(--line)}
+.medal.gold::before{background:linear-gradient(90deg,#f2c230,#ffe58a,#d9a21b)}
+.medal.silver::before{background:linear-gradient(90deg,#9fb0b8,#e3ebee,#8a9aa2)}
+.medal.dept::before{background:var(--leaf)}
+.medal .yr{font-weight:700;font-size:13px;letter-spacing:.12em;color:var(--muted)}
+.medal .pos{font-family:var(--font-display);font-weight:700;font-size:clamp(58px,7vw,78px);line-height:.95;color:var(--green);font-variant-numeric:tabular-nums}
+.medal.gold .pos{color:#b8860b}
+.medal .what{font-weight:600;font-size:17px;color:var(--ink)}
+.medal .pts{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.medal a{margin-top:10px;font-weight:600;font-size:14.5px;color:var(--leaf)}
+.medal.gold::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,230,140,.35),transparent);animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+
+
+/* steps */
+.steps{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--gold-ink);font:700 20px/44px var(--font-display);text-align:center}
+.steps b{display:block;font-size:17px}
+.steps span{color:var(--on-green-muted);font-size:15.5px}
+
+/* form */
+form.adm{background:var(--surface);color:var(--ink);border-radius:24px;padding:clamp(20px,3.5vw,34px);display:grid;gap:14px;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+form.adm h3{font-size:26px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-weight:600;font-size:14.5px}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+textarea{min-height:90px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--leaf);box-shadow:0 0 0 3px color-mix(in srgb,var(--leaf) 25%,transparent)}
+.err{color:#c0392b;font-size:14px;font-weight:600}
+.note{font-size:13.5px;color:var(--muted)}
+.wa-out{display:none;background:color-mix(in srgb,var(--leaf) 12%,transparent);border:1px solid var(--line);border-radius:14px;padding:14px;gap:10px}
+.wa-out.show{display:grid}
+.wa-out pre{white-space:pre-wrap;font:14px/1.5 var(--font-body);margin:0}
+
+/* gallery strip */
+.strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:30px}
+.strip img{aspect-ratio:3/4;object-fit:cover;border-radius:12px;width:100%}
+@media (max-width:760px){.strip{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* community links */
+.links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+@media (max-width:760px){.links{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.links{grid-template-columns:1fr}}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-weight:600}
+.links a:hover{border-color:var(--leaf)}
+.links a span{color:var(--leaf)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.cbox{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.cbox h3{font-size:18px;margin-bottom:8px;color:var(--green)}
+.cbox p,.cbox li{font-size:15.5px;color:var(--muted)}
+.cbox ul{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.copy{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px}
+.copy code{font:700 18px var(--font-body);color:var(--ink);user-select:all}
+.copy button{font:600 13px var(--font-body);background:var(--bg);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
+
+/* checklist */
+.check{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
+@media (max-width:860px){.check{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.check{grid-template-columns:1fr}}
+.check li{list-style:none;display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.check ul{display:contents}
+.tick{flex:none;width:28px;height:28px;border-radius:50%;background:var(--green);color:var(--gold);display:grid;place-items:center;font-weight:700}
+.check b{display:block}
+.check span{font-size:14.5px;color:var(--muted)}
+/* gallery */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{font:600 14px var(--font-body);padding:9px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.gal{columns:4;column-gap:12px;margin-top:22px}
+@media (max-width:980px){.gal{columns:3}}
+@media (max-width:620px){.gal{columns:2;column-gap:8px}.gal button{margin-bottom:8px}}
+.gal button{display:block;width:100%;margin:0 0 12px;padding:0;border:0;background:none;cursor:zoom-in;border-radius:14px;overflow:hidden;break-inside:avoid}
+.gal img{width:100%;height:auto;transition:transform .4s}
+.gal button:hover img{transform:scale(1.04)}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1100px);max-height:92vh}
+dialog.lb::backdrop{background:rgba(4,18,11,.88)}
+dialog.lb img{max-height:82vh;width:auto;margin:auto;border-radius:12px}
+dialog.lb p{color:#fff;text-align:center;margin-top:10px;font-weight:600}
+.lb-close{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));background:#fff;color:#123;border:0;border-radius:999px;padding:10px 16px;font:700 15px var(--font-body);cursor:pointer}
+/* faq */
+.faq{display:grid;gap:10px;margin-top:28px;max-width:860px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px}
+.faq summary{cursor:pointer;font-weight:600;font-size:17px;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:600 22px/1 var(--font-display);color:var(--leaf)}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding:0 0 16px;color:var(--muted)}
+
+footer{background:var(--green-2);color:var(--on-green-muted);font-size:14.5px}
+footer .wrap{padding-block:34px;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+footer b{color:var(--on-green);font-family:var(--font-display);font-size:18px;font-weight:600}
+
+.fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;background:#1fa855;color:#fff;border-radius:999px;padding:14px 18px;display:flex;gap:10px;align-items:center;font-weight:700;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.fab svg{width:24px;height:24px}
+@media (max-width:520px){.fab span{display:none}.fab{padding:15px}}
+.ident{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+@media (max-width:860px){.ident{grid-template-columns:1fr}}
+.icard{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:var(--r);padding:24px}
+.icard h3{font-size:22px;color:var(--green);margin-bottom:10px}
+.icard p{font-size:16px;color:var(--ink);line-height:1.65}
+.icard p+p{margin-top:10px}
+.ifil{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px}
+.ifil summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--green)}
+.ifil p{margin-top:12px;font-size:16px;color:var(--muted);line-height:1.65}
+.isrc{margin-top:12px;font-size:13.5px;color:var(--muted)}
+.docs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+@media (max-width:980px){.docs{grid-template-columns:1fr}}
+.doc{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .2s,transform .2s}
+.doc:hover{border-color:var(--leaf);transform:translateY(-2px)}
+.doc-ico{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:14px;background:var(--green);color:#fff;font:700 15px/1 var(--font-body);letter-spacing:.04em}
+.doc-txt b{display:block;font-size:19px;color:var(--green)}
+.doc-txt small{display:block;margin-top:6px;font-size:15px;color:var(--muted)}
+.doc-go{margin-top:auto;font-weight:600;color:var(--leaf)}
+</style></head><body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><img src="img/logo.png" alt="Escudo Colegio S.E.R."><span><b>Colegio S.E.R.</b><small>Sistema Educativo Reintegrado</small></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+    <ul class="menu" id="menu">
+      <li><a href="#metodologia">Metodología</a></li>
+      <li><a href="#experiencias">Experiencias</a></li>
+      <li><a href="#niveles">Niveles</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#documentos">Documentos</a></li>
+      <li><a class="hl" href="lectura-rapida.html">Lectura rápida</a></li>
+      <li><a href="#admisiones">Admisiones</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="btn btn-gold desk" href="https://colegiosonline.com/secure/paginas/?ie=ser" target="_blank" rel="noopener">Plataforma de notas</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <img class="poster" src="video/hero-poster.jpg" alt="">
+  <video id="hero-video" muted loop playsinline preload="metadata" poster="video/hero-poster.jpg"><source src="video/hero.mp4" type="video/mp4"></video>
+  <div class="wrap">
+    <h1>Aquí se aprende <em>haciendo</em>.</h1>
+    <p>Primaria y bachillerato en Girardot con grupos de máximo 15 estudiantes, aula acuática, Impresión 3D y docentes que conocen a cada niño por su nombre.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="#admisiones">Agenda tu visita</a>
+      <a class="btn btn-ghost" href="#videos">Ver cómo es un día aquí</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>15</b><span>estudiantes máximo por salón</span></div>
+      <div class="fact"><b>1° a 11°</b><span>primaria y bachillerato</span></div>
+      <div class="fact"><b>1° Girardot</b><span>Saber 11 2023 y 2024*</span></div>
+      <div class="fact"><b>Aula</b><span>acuática dentro del colegio</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="metodologia">
+  <div class="wrap split">
+    <div class="stack">
+      <span class="eyebrow">Nuestra metodología</span>
+      <h2>Formamos mentes, transformamos futuros</h2>
+      <p class="lead">En el S.E.R. cada clase tiene algo que tocar, construir o resolver. Combinamos estrategias de memoria, educación emocional y tecnología en el aula para que los estudiantes entiendan, no solo repitan.</p>
+      <div class="pillars">
+        <div class="pillar"><h3><i class="dot"></i>Grupos pequeños</h3><p>Máximo 15 estudiantes por salón: el docente acompaña el ritmo de cada uno.</p></div>
+        <div class="pillar"><h3><i class="dot"></i>Aprenden asociando</h3><p>Técnicas de memoria (mnemotecnia) y lectura que les sirven para toda la vida.</p></div>
+        <div class="pillar"><h3><i class="dot"></i>Inteligencia emocional</h3><p>Aprenden a reconocer lo que sienten, a convivir y a expresarse con seguridad.</p></div>
+        <div class="pillar"><h3><i class="dot"></i>Pantallas interactivas</h3><p>Cada aula tiene pantalla táctil para retos, juegos y ejercicios en clase.</p></div>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="false">
+      <figure class="pol"><img src="img/aula-memoria.webp" alt="Estudiante resolviendo una secuencia de memoria en la pantalla interactiva" loading="lazy"><figcaption>Técnica del lápiz</figcaption></figure>
+      <figure class="pol"><img src="img/hero-1.webp" alt="Niña de primaria sonriendo en el salón" loading="lazy"><figcaption>Primaria</figcaption></figure>
+      <figure class="pol"><img src="img/primaria-1.webp" alt="Dos estudiantes muestran su trabajo de dibujo" loading="lazy"><figcaption>Trabajo en equipo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band green" id="experiencias">
+  <div class="wrap">
+    <div class="exp-head">
+      <div class="stack" style="gap:10px"><span class="eyebrow">Experiencias de aprendizaje</span><h2>Lo que vive un estudiante del S.E.R.</h2></div>
+      <a class="btn btn-gold" href="#admisiones">Quiero conocerlo</a>
+    </div>
+    <div class="exp">
+      <article class="card"><img src="img/agua-1.webp" alt="Estudiantes en el aula acuática" loading="lazy"><div class="body"><span class="tag">Aula acuática</span><h3>Confianza en el agua</h3><p>Clases en nuestra propia piscina: coordinación, seguridad y alegría.</p></div></article>
+      <article class="card"><img src="img/d3-1.webp" alt="Impresora 3D imprimiendo piezas" loading="lazy"><div class="body"><span class="tag">Impresión 3D</span><h3>Del diseño a sus manos</h3><p>Diseñan en pantalla y ven cómo su idea se convierte en un objeto real.</p></div></article>
+      <article class="card"><img src="img/mini-1.webp" alt="Estudiante con su maqueta de MiniConstructores" loading="lazy"><div class="body"><span class="tag">MiniConstructores</span><h3>Construyen sus ideas</h3><p>Diseñan, cortan, arman: aviones, casas y paisajes hechos por ellos.</p></div></article>
+      <article class="card"><img src="img/dibujo-2.webp" alt="Estudiante muestra su pintura de La noche estrellada" loading="lazy"><div class="body"><span class="tag">Dibujo Integral</span><h3>Color e imaginación</h3><p>Cada trazo fortalece su concentración y su forma de expresarse.</p></div></article>
+      <article class="card"><img src="img/mat-1.webp" alt="Estudiante armando figuras geométricas" loading="lazy"><div class="body"><span class="tag">Matemáticas</span><h3>Matemáticas que se viven</h3><p>Medir, contar, armar figuras y resolver retos en la pantalla.</p></div></article>
+      <article class="card"><img src="img/soc-1.webp" alt="Estudiante con un mapa antiguo hecho en clase" loading="lazy"><div class="body"><span class="tag">Sociales</span><h3>Su país y su historia</h3><p>Mapas, regiones de Colombia y proyectos sobre el mundo que los rodea.</p></div></article>
+      <article class="card"><img src="img/lit-1.webp" alt="Estudiante con su revista infantil" loading="lazy"><div class="body"><span class="tag">Literatura</span><h3>Leen, escriben y crean</h3><p>Hacen sus propias revistas, cuentos y relatos.</p></div></article>
+      <article class="card"><img src="img/dep-1.webp" alt="Equipo de fútbol del colegio con la copa" loading="lazy"><div class="body"><span class="tag">Deporte</span><h3>Trabajo en equipo</h3><p>Aprenden a esforzarse, a respetar y a celebrar juntos.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="niveles">
+  <div class="wrap">
+    <span class="eyebrow">Niveles</span>
+    <h2 style="margin-top:10px">Primaria y bachillerato, de primero a once</h2>
+    <div class="levels">
+      <article class="level"><img src="img/hero-2.webp" alt="Estudiantes de primaria jugando en el salón" loading="lazy"><div class="in"><h3>Primaria</h3><ul><li>Dibujo Integral, MiniConstructores e Impresión 3D</li><li>Aula acuática y deporte</li><li>Lectura, memoria y educación emocional</li></ul><span class="hours">7:00 a.m. – 1:00 p.m.</span></div></article>
+      <article class="level"><img src="img/bach-05.webp" alt="Estudiantes de bachillerato del Colegio S.E.R. con su uniforme" loading="lazy"><div class="in"><h3>Bachillerato</h3><ul><li>Coaching y oratoria para hablar en público</li><li>Tecnología, diseño e Impresión 3D</li><li>Preparación para las pruebas Saber 11: 1° en Girardot en 2023 y 2024</li></ul><span class="hours">7:00 a.m. – 1:30 p.m.</span> <a href="#bachillerato" style="font-weight:600;color:var(--leaf)">Ver fotos de bachillerato →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="band green" id="videos">
+  <div class="wrap">
+    <span class="eyebrow">Videos</span>
+    <h2 style="margin-top:10px">Mírelo con sus propios ojos</h2>
+    <p class="lead" style="margin-top:14px">Grabados en nuestras aulas, con nuestros estudiantes.</p>
+    <div class="videos">
+      <div class="vid"><video controls preload="none" playsinline poster="video/primaria.jpg"><source src="video/primaria.mp4" type="video/mp4"></video><p>Así es la primaria<span>56 s · con narración</span></p></div>
+      <div class="vid"><video controls preload="none" playsinline poster="video/un-dia.jpg"><source src="video/un-dia.mp4" type="video/mp4"></video><p>Un día en el S.E.R.<span>31 s</span></p></div>
+      <div class="vid"><video controls preload="none" playsinline poster="video/aula-acuatica.jpg"><source src="video/aula-acuatica.mp4" type="video/mp4"></video><p>Aula acuática<span>16 s</span></p></div>
+      <div class="vid"><video controls preload="none" playsinline poster="video/dia-cultural.jpg"><source src="video/dia-cultural.mp4" type="video/mp4"></video><p>Día Cultural<span>28 s</span></p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="band" id="galeria" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Galería</span>
+    <h2 style="margin-top:10px">Un recorrido por el colegio</h2>
+    <div class="chips" role="group" aria-label="Filtrar galería">
+      <button class="chip" type="button" data-f="all" aria-pressed="true">Todo</button>
+      <button class="chip" type="button" data-f="aula" aria-pressed="false">En el aula</button>
+      <button class="chip" type="button" data-f="proyectos" aria-pressed="false">Proyectos y arte</button>
+      <button class="chip" type="button" data-f="tecnologia" aria-pressed="false">Tecnología</button>
+      <button class="chip" type="button" data-f="acuatica" aria-pressed="false">Aula acuática</button>
+      <button class="chip" type="button" data-f="deporte" aria-pressed="false">Deporte</button>
+      <button class="chip" type="button" data-f="comunidad" aria-pressed="false">Comunidad</button>
+    </div>
+    <div class="gal" id="gal">
+      <button type="button" data-cat="acuatica" data-cap="Aula acuática"><img src="img/agua-1.webp" alt="Aula acuática" loading="lazy"></button>
+      <button type="button" data-cat="acuatica" data-cap="Aula acuática"><img src="img/agua-2.webp" alt="Aula acuática" loading="lazy"></button>
+      <button type="button" data-cat="acuatica" data-cap="Aula acuática"><img src="img/agua-3.webp" alt="Aula acuática" loading="lazy"></button>
+      <button type="button" data-cat="tecnologia" data-cap="Impresión 3D"><img src="img/d3-1.webp" alt="Impresión 3D" loading="lazy"></button>
+      <button type="button" data-cat="tecnologia" data-cap="Impresión 3D"><img src="img/d3-2.webp" alt="Impresión 3D" loading="lazy"></button>
+      <button type="button" data-cat="tecnologia" data-cap="Piezas impresas en 3D"><img src="img/d3-3.webp" alt="Piezas impresas en 3D" loading="lazy"></button>
+      <button type="button" data-cat="tecnologia" data-cap="Pantallas interactivas"><img src="img/aula-pantalla.webp" alt="Pantallas interactivas" loading="lazy"></button>
+      <button type="button" data-cat="proyectos" data-cap="MiniConstructores"><img src="img/mini-1.webp" alt="MiniConstructores" loading="lazy"></button>
+      <button type="button" data-cat="proyectos" data-cap="MiniConstructores"><img src="img/mini-2.webp" alt="MiniConstructores" loading="lazy"></button>
+      <button type="button" data-cat="proyectos" data-cap="MiniConstructores"><img src="img/mini-3.webp" alt="MiniConstructores" loading="lazy"></button>
+      <button type="button" data-cat="proyectos" data-cap="Dibujo Integral"><img src="img/dibujo-1.webp" alt="Dibujo Integral" loading="lazy"></button>
+      <button type="button" data-cat="proyectos" data-cap="Dibujo Integral"><img src="img/dibujo-2.webp" alt="Dibujo Integral" loading="lazy"></button>
+      <button type="button" data-cat="proyectos" data-cap="Dibujo Integral"><img src="img/dibujo-3.webp" alt="Dibujo Integral" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Matemáticas"><img src="img/mat-1.webp" alt="Matemáticas" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Matemáticas"><img src="img/mat-2.webp" alt="Matemáticas" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Matemáticas"><img src="img/mat-3.webp" alt="Matemáticas" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Sociales"><img src="img/soc-1.webp" alt="Sociales" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Sociales"><img src="img/soc-2.webp" alt="Sociales" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Literatura"><img src="img/lit-1.webp" alt="Literatura" loading="lazy"></button>
+      <button type="button" data-cat="aula" data-cap="Literatura"><img src="img/lit-2.webp" alt="Literatura" loading="lazy"></button>
+      <button type="button" data-cat="deporte" data-cap="Deporte"><img src="img/dep-1.webp" alt="Deporte" loading="lazy"></button>
+      <button type="button" data-cat="deporte" data-cap="Deporte"><img src="img/dep-2.webp" alt="Deporte" loading="lazy"></button>
+      <button type="button" data-cat="comunidad" data-cap="Día Cultural"><img src="img/cult-1.webp" alt="Día Cultural" loading="lazy"></button>
+      <button type="button" data-cat="comunidad" data-cap="Día Cultural"><img src="img/cult-2.webp" alt="Día Cultural" loading="lazy"></button>
+      <button type="button" data-cat="comunidad" data-cap="Feria de saberes"><img src="img/cult-3.webp" alt="Feria de saberes" loading="lazy"></button>
+      <button type="button" data-cat="comunidad" data-cap="Docentes"><img src="img/doc-1.webp" alt="Docentes" loading="lazy"></button>
+      <button type="button" data-cat="comunidad" data-cap="Docentes"><img src="img/doc-2.webp" alt="Docentes" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button class="lb-close" id="lb-close" type="button">Cerrar ✕</button><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
+
+<section class="band green" id="bachillerato">
+  <div class="wrap">
+    <div class="bach-head">
+      <div class="stack" style="gap:10px">
+        <span class="eyebrow">Bachillerato S.E.R.</span>
+        <h2>Jóvenes que se preparan para la universidad y para la vida</h2>
+        <p class="lead" style="color:var(--on-green-muted)">Grupos pequeños, proyectos, primeros auxilios, servicio a la comunidad y la preparación que nos llevó al primer puesto de Girardot en Saber 11 en 2023 y 2024.</p>
+      </div>
+      <div class="bach-nav" aria-label="Controles del carrusel">
+        <button type="button" class="bach-btn" id="bach-prev" aria-label="Foto anterior">←</button>
+        <span class="bach-count" id="bach-count" aria-live="polite">1 / 15</span>
+        <button type="button" class="bach-btn" id="bach-next" aria-label="Foto siguiente">→</button>
+      </div>
+    </div>
+    <div class="bach-track" id="bach-track" tabindex="0" aria-label="Fotos de bachillerato">
+        <figure class="bach-slide" data-cap="Estudiantes de bachillerato en la entrada del colegio"><button type="button" class="bach-open" aria-label="Ampliar foto: Estudiantes de bachillerato en la entrada del colegio"><img src="img/bach-01.webp" alt="Estudiantes de bachillerato en la entrada del colegio" loading="lazy"></button><figcaption>Estudiantes de bachillerato en la entrada del colegio</figcaption></figure>
+        <figure class="bach-slide" data-cap="Bachillerato S.E.R. con su uniforme"><button type="button" class="bach-open" aria-label="Ampliar foto: Bachillerato S.E.R. con su uniforme"><img src="img/bach-02.webp" alt="Bachillerato S.E.R. con su uniforme" loading="lazy"></button><figcaption>Bachillerato S.E.R. con su uniforme</figcaption></figure>
+        <figure class="bach-slide" data-cap="Compañeras y compañeros de bachillerato"><button type="button" class="bach-open" aria-label="Ampliar foto: Compañeras y compañeros de bachillerato"><img src="img/bach-03.webp" alt="Compañeras y compañeros de bachillerato" loading="lazy"></button><figcaption>Compañeras y compañeros de bachillerato</figcaption></figure>
+        <figure class="bach-slide" data-cap="En las escaleras del colegio"><button type="button" class="bach-open" aria-label="Ampliar foto: En las escaleras del colegio"><img src="img/bach-04.webp" alt="En las escaleras del colegio" loading="lazy"></button><figcaption>En las escaleras del colegio</figcaption></figure>
+        <figure class="bach-slide" data-cap="Estudiantes de bachillerato con su uniforme"><button type="button" class="bach-open" aria-label="Ampliar foto: Estudiantes de bachillerato con su uniforme"><img src="img/bach-05.webp" alt="Estudiantes de bachillerato con su uniforme" loading="lazy"></button><figcaption>Estudiantes de bachillerato con su uniforme</figcaption></figure>
+        <figure class="bach-slide" data-cap="Un grupo que se apoya"><button type="button" class="bach-open" aria-label="Ampliar foto: Un grupo que se apoya"><img src="img/bach-06.webp" alt="Un grupo que se apoya" loading="lazy"></button><figcaption>Un grupo que se apoya</figcaption></figure>
+        <figure class="bach-slide" data-cap="Formación y charla en el patio"><button type="button" class="bach-open" aria-label="Ampliar foto: Formación y charla en el patio"><img src="img/bach-07.webp" alt="Formación y charla en el patio" loading="lazy"></button><figcaption>Formación y charla en el patio</figcaption></figure>
+        <figure class="bach-slide" data-cap="Práctica de primeros auxilios"><button type="button" class="bach-open" aria-label="Ampliar foto: Práctica de primeros auxilios"><img src="img/bach-08.webp" alt="Práctica de primeros auxilios" loading="lazy"></button><figcaption>Práctica de primeros auxilios</figcaption></figure>
+        <figure class="bach-slide" data-cap="Exposición de una estudiante ante los padres"><button type="button" class="bach-open" aria-label="Ampliar foto: Exposición de una estudiante ante los padres"><img src="img/bach-09.webp" alt="Exposición de una estudiante ante los padres" loading="lazy"></button><figcaption>Exposición de una estudiante ante los padres</figcaption></figure>
+        <figure class="bach-slide" data-cap="Actividad de integración en el aula"><button type="button" class="bach-open" aria-label="Ampliar foto: Actividad de integración en el aula"><img src="img/bach-10.webp" alt="Actividad de integración en el aula" loading="lazy"></button><figcaption>Actividad de integración en el aula</figcaption></figure>
+        <figure class="bach-slide" data-cap="Actividad comunitaria fuera del colegio"><button type="button" class="bach-open" aria-label="Ampliar foto: Actividad comunitaria fuera del colegio"><img src="img/bach-11.webp" alt="Actividad comunitaria fuera del colegio" loading="lazy"></button><figcaption>Actividad comunitaria fuera del colegio</figcaption></figure>
+        <figure class="bach-slide" data-cap="Campaña ambiental en el barrio"><button type="button" class="bach-open" aria-label="Ampliar foto: Campaña ambiental en el barrio"><img src="img/bach-12.webp" alt="Campaña ambiental en el barrio" loading="lazy"></button><figcaption>Campaña ambiental en el barrio</figcaption></figure>
+        <figure class="bach-slide" data-cap="Estudiante de bachillerato"><button type="button" class="bach-open" aria-label="Ampliar foto: Estudiante de bachillerato"><img src="img/bach-13.webp" alt="Estudiante de bachillerato" loading="lazy"></button><figcaption>Estudiante de bachillerato</figcaption></figure>
+        <figure class="bach-slide" data-cap="Grupo de bachillerato"><button type="button" class="bach-open" aria-label="Ampliar foto: Grupo de bachillerato"><img src="img/bach-14.webp" alt="Grupo de bachillerato" loading="lazy"></button><figcaption>Grupo de bachillerato</figcaption></figure>
+        <figure class="bach-slide" data-cap="Promoción 2026"><button type="button" class="bach-open" aria-label="Ampliar foto: Promoción 2026"><img src="img/bach-15.webp" alt="Promoción 2026" loading="lazy"></button><figcaption>Promoción 2026</figcaption></figure>
+    </div>
+    <div class="bach-dots" id="bach-dots" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="band" id="resultados">
+  <div class="wrap">
+    <div class="res-head">
+      <span class="eyebrow">Resultados Saber 11 · ICFES</span>
+      <h2>Primer puesto en Girardot en 2023 y 2024</h2>
+      <p class="lead">Así le ha ido al Colegio S.E.R. en las Pruebas Saber 11 en los últimos años. Cada dato tiene su fuente para que usted lo compruebe.</p>
+    </div>
+    <ol class="medals">
+      <li class="medal gold reveal">
+        <span class="yr">2023</span>
+        <span class="pos"><b data-count="1">1</b>°</span>
+        <span class="what">en Girardot</span>
+        <span class="pts"><b data-count="310.3">310,3</b> puntos</span>
+        <a href="https://www.icfes-analytics.com/icfes/departamento/cundinamarca/municipio/girardot/2023/" target="_blank" rel="noopener">Ver ranking 2023 ↗</a>
+      </li>
+      <li class="medal gold reveal">
+        <span class="yr">2024</span>
+        <span class="pos"><b data-count="1">1</b>°</span>
+        <span class="what">en Girardot</span>
+        <span class="pts"><b data-count="327.9">327,9</b> puntos</span>
+        <a href="https://www.icfes-analytics.com/icfes/departamento/cundinamarca/municipio/girardot/2024/" target="_blank" rel="noopener">Ver ranking 2024 ↗</a>
+      </li>
+      <li class="medal silver reveal">
+        <span class="yr">2025</span>
+        <span class="pos"><b data-count="2">2</b>°</span>
+        <span class="what">en el ranking de Girardot</span>
+        <span class="pts"><b data-count="310.5">310,5</b> puntos · top 10&nbsp;% del país</span>
+        <a href="https://www.icfes-analytics.com/icfes/colegio/colegio-ser-sistema-educativo-reintegrado-de-girardot-girardot/" target="_blank" rel="noopener">Ver resultado 2025 ↗</a>
+      </li>
+      <li class="medal silver reveal">
+        <span class="yr">2026</span>
+        <span class="pos"><b data-count="2">2</b>°</span>
+        <span class="what">en Girardot</span>
+        <span class="pts"><b data-count="316">316</b> puntos · puesto 55 de 793 en Cundinamarca</span>
+        <a href="https://www.miltonochoa.com.co/ranking-colegios/cundinamarca/girardot/" target="_blank" rel="noopener">Ver ranking 2026 ↗</a>
+      </li>
+    </ol>
+    <p class="src">Fuentes: ranking por puntaje global de <a href="https://www.icfes-analytics.com/icfes/departamento/cundinamarca/municipio/girardot/" target="_blank" rel="noopener">ICFES Analytics</a> (2023 a 2025), plataforma independiente que calcula sus rankings con los datos públicos del ICFES; <a href="https://www.miltonochoa.com.co/ranking-colegios/cundinamarca/girardot/" target="_blank" rel="noopener">Grupo Milton Ochoa</a>, Ranking Saber 11° 2026 de Girardot (calendario A, sedes con 5 o más evaluados); y <a href="https://www.corporacionleodoncel.com/como-le-fue-a-mi-colegio/?e=colegio&CODIGO=193607" target="_blank" rel="noopener">Corporación Leo Doncel</a> para el puesto en Cundinamarca (2026). Código DANE del colegio: 325307002023.</p>
+  </div>
+</section>
+
+
+<section class="band" id="por-que" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Antes de elegir colegio</span>
+    <h2 style="margin-top:10px">Lo que debería tener el colegio de su hijo</h2>
+    <p class="lead" style="margin-top:14px">Use esta lista cuando visite colegios en Girardot. En el S.E.R. puede comprobar cada punto en persona.</p>
+    <ul class="check">
+      <li><i class="tick">✓</i><div><b>Pocos estudiantes por salón</b><span>Aquí son máximo 15.</span></div></li>
+      <li><i class="tick">✓</i><div><b>Aprendizaje práctico</b><span>MiniConstructores, Impresión 3D y proyectos.</span></div></li>
+      <li><i class="tick">✓</i><div><b>Tecnología en cada aula</b><span>Pantallas interactivas en todos los salones.</span></div></li>
+      <li><i class="tick">✓</i><div><b>Actividad física de verdad</b><span>Aula acuática y deporte dentro de la jornada.</span></div></li>
+      <li><i class="tick">✓</i><div><b>Educación emocional</b><span>Convivencia, autoestima y oratoria.</span></div></li>
+      <li><i class="tick">✓</i><div><b>Resultados que se pueden verificar</b><span>1° en Girardot en Saber 11 2023 y 2024, con enlaces a la fuente.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="docentes" style="padding-top:0">
+  <div class="wrap split">
+    <div class="collage" style="aspect-ratio:5/4">
+      <figure class="pol" style="width:62%"><img src="img/aula-docentes.webp" alt="Docentes del colegio en capacitación frente a la pantalla interactiva" loading="lazy" style="aspect-ratio:4/3"><figcaption>Capacitación docente</figcaption></figure>
+      <figure class="pol" style="width:56%;top:auto;bottom:0"><img src="img/doc-2.webp" alt="Equipo docente del Colegio S.E.R." loading="lazy" style="aspect-ratio:4/3"><figcaption>Nuestro equipo</figcaption></figure>
+    </div>
+    <div class="stack">
+      <span class="eyebrow">Nuestros docentes</span>
+      <h2>El corazón del Colegio S.E.R.</h2>
+      <p class="lead">Detrás de cada logro hay un docente que se capacita, planea con dedicación y acompaña a cada estudiante como alguien único. Nuestros profesores se forman durante el año en metodologías activas, uso de pantallas interactivas y educación emocional.</p>
+      <div><a class="btn btn-ghost" style="color:var(--green)" href="https://ser.colegiosonline.com/index.php?id=docentes" target="_blank" rel="noopener">Ver lista de docentes</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band green" id="admisiones">
+  <div class="wrap split" style="align-items:start">
+    <div class="stack">
+      <span class="eyebrow">Admisiones</span>
+      <h2>Venga a conocernos</h2>
+      <p class="lead">La mejor forma de elegir colegio es caminar por sus aulas. Agende una visita y resolvemos todas sus preguntas en persona.</p>
+      <ol class="steps">
+        <li><div><b>Escríbanos</b><span>Llene el formulario o escríbanos por WhatsApp.</span></div></li>
+        <li><div><b>Visite el colegio</b><span>Conozca las aulas, el aula acuática y a nuestros docentes.</span></div></li>
+        <li><div><b>Inscripción y entrevista</b><span>Diligencie el formulario de inscripción y reúnase con coordinación.</span></div></li>
+        <li><div><b>Matrícula</b><span>Le entregamos toda la información de costos de forma presencial.</span></div></li>
+      </ol>
+    </div>
+    <form class="adm" id="adm-form" novalidate>
+      <h3>Solicitar información</h3>
+      <p class="note">Al enviar, se abre WhatsApp con su mensaje listo para el colegio.</p>
+      <label for="f-acudiente">Nombre del acudiente<input id="f-acudiente" name="acudiente" autocomplete="name" placeholder="Ej.: María Gómez" required></label>
+      <div class="row2">
+        <label for="f-tel">Teléfono / WhatsApp<input id="f-tel" name="tel" inputmode="tel" autocomplete="tel" placeholder="Ej.: 310 000 0000" required></label>
+        <label for="f-grado">Grado de interés<select id="f-grado" name="grado" required>
+          <option value="">Seleccione…</option>
+          <option>Primero</option><option>Segundo</option><option>Tercero</option><option>Cuarto</option><option>Quinto</option>
+          <option>Sexto</option><option>Séptimo</option><option>Octavo</option><option>Noveno</option><option>Décimo</option><option>Once</option>
+        </select></label>
+      </div>
+      <label for="f-estudiante">Nombre del estudiante (opcional)<input id="f-estudiante" name="estudiante" placeholder="Ej.: Santiago"></label>
+      <label for="f-msg">Mensaje (opcional)<textarea id="f-msg" name="msg" placeholder="¿Qué le gustaría saber?"></textarea></label>
+      <p class="err" id="f-err" hidden>Escriba su nombre, un teléfono válido y el grado de interés.</p>
+      <button class="btn btn-gold" type="submit" style="justify-content:center">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>
+        Enviar por WhatsApp</button>
+      <div class="wa-out" id="wa-out" aria-live="polite">
+        <b>Si WhatsApp no se abrió, copie este mensaje y envíelo al 300 533 4729:</b>
+        <pre id="wa-text"></pre>
+        <div class="copy"><button type="button" id="wa-copy">Copiar mensaje</button><a id="wa-link" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band" id="comunidad">
+  <div class="wrap">
+    <span class="eyebrow">Comunidad S.E.R.</span>
+    <h2 style="margin-top:10px">Familias que celebran juntas</h2>
+    <p class="lead" style="margin-top:14px">Día Cultural, festivales y proyectos donde estudiantes, docentes y familias trabajan como una sola comunidad.</p>
+    <div class="strip">
+      <img src="img/cult-1.webp" alt="Estudiantes en el Día Cultural" loading="lazy">
+      <img src="img/cult-2.webp" alt="Bailarinas con traje típico en el Día Cultural" loading="lazy">
+      <img src="img/cult-3.webp" alt="Feria de saberes de los estudiantes" loading="lazy">
+      <img src="img/dep-2.webp" alt="Estudiante levanta la copa del torneo" loading="lazy">
+      <img src="img/lit-2.webp" alt="Estudiante con su cuaderno de literatura" loading="lazy">
+      <img src="img/mini-2.webp" alt="Estudiante con su maqueta de MiniConstructores" loading="lazy">
+    </div>
+    <h3 style="margin-top:46px">Para estudiantes y acudientes</h3>
+    <div class="links">
+      <a href="lectura-rapida.html">Lectura rápida (VelocidadSER) <span>→</span></a>
+      <a href="https://colegiosonline.com/secure/paginas/?ie=ser" target="_blank" rel="noopener">Plataforma de notas <span>↗</span></a>
+      <a href="https://ser.colegiosonline.com/index.php?id=4" target="_blank" rel="noopener">Comunicados <span>↗</span></a>
+      <a href="https://ser.colegiosonline.com/index.php?id=guias" target="_blank" rel="noopener">Guías para descargar <span>↗</span></a>
+      <a href="#identidad">Misión y visión <span>↓</span></a>
+      <a href="#documentos">Documentos institucionales <span>↓</span></a>
+      <a href="https://ser.colegiosonline.com/index.php?id=egresados" target="_blank" rel="noopener">Egresados <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+
+<section class="band" id="identidad">
+  <div class="wrap">
+    <span class="eyebrow">Quiénes somos</span>
+    <h2 style="margin-top:10px">Nuestra identidad institucional</h2>
+    <p class="lead" style="margin-top:14px">Colegio privado de Girardot con Básica Primaria, Básica Secundaria y Media Académica. Proyecto Educativo Institucional «SER. Innovación y trascendencia».</p>
+    <div class="ident">
+      <article class="icard"><h3>Misión</h3><p>«En el Colegio S.E.R., formamos personas íntegras y competentes, preparadas para liderar en un mundo en constante transformación. A través de un modelo educativo innovador, potenciamos habilidades académicas, emocionales y sociales, integrando tecnología de vanguardia e inteligencia artificial para personalizar el aprendizaje. Nuestro enfoque sistémico fomenta el pensamiento crítico, el liderazgo colaborativo y la conciencia global, asegurando que nuestros estudiantes no solo alcancen la excelencia académica, sino que también se conviertan en agentes de cambio comprometidos con el bienestar de la sociedad y el cuidado del planeta.»</p></article>
+      <article class="icard"><h3>Visión</h3><p>«El Colegio S.E.R. proyecta para el 2030 ser como un referente local, regional y nacional en educación innovadora y de alto rendimiento. Nos destacamos por formar personas íntegras, competentes y resilientes, capaces de liderar en un mundo globalizado y en constante cambio. A través de metodologías avanzadas, como la lectura rápida, el liderazgo transformador y el uso de tecnologías de vanguardia, potenciamos habilidades académicas, emocionales y sociales que preparan a nuestros estudiantes para los desafíos del futuro.</p><p>Promovemos un ambiente de aprendizaje inclusivo y colaborativo, basado en valores como el respeto, la empatía y la responsabilidad. Nuestro compromiso es formar ciudadanos conscientes, innovadores y comprometidos con el desarrollo sostenible de su comunidad y del planeta. En el Colegio S.E.R., no solo soñamos con un futuro mejor, sino que lo construimos día a día.»</p></article>
+    </div>
+    <details class="ifil"><summary>Nuestra filosofía</summary><p>El Colegio S.E.R. se define como una comunidad educativa integrada por padres de familia, docentes, estudiantes, personal administrativo y de servicios generales. Su objetivo principal es fomentar un entorno de buenas relaciones humanas, promoviendo una convivencia armónica y reconociendo las competencias sociales básicas necesarias para la vida en comunidad. Este enfoque se basa en la construcción de valores, hábitos, actitudes y emociones positivas en los estudiantes, con el fin de prepararlos para una participación activa y responsable en la sociedad.</p><p>Además, el Colegio S.E.R. establece pautas para la resolución de conflictos, orientando y regulando el aprendizaje tanto individual como colectivo, con el propósito de impulsar el crecimiento personal. Se reconoce la capacidad humana de aprender y perfeccionarse, así como la importancia de asumir y construir a partir del error. Se busca propiciar un encuentro significativo y respetuoso de los estudiantes con las normas, el colegio y su entorno, enmarcado dentro de un proceso multidisciplinario que integra diversas ciencias. Estas incluyen, además de las pedagógicas, la formación personal del ser, su desarrollo físico, mental, intelectual, emocional, espiritual y ético, así como todas aquellas disciplinas que contribuyan al desarrollo holístico de la personalidad y beneficien a la comunidad.</p></details>
+    <p class="isrc">Tomado del Proyecto Educativo Institucional (PEI) del Colegio S.E.R.</p>
+  </div>
+</section>
+
+<section class="band" id="documentos" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Documentos institucionales</span>
+    <h2 style="margin-top:10px">Conozca cómo funciona nuestro colegio</h2>
+    <p class="lead" style="margin-top:14px">Documentos oficiales del Colegio S.E.R., disponibles para estudiantes, acudientes y comunidad, de acuerdo con la Ley de Transparencia.</p>
+    <div class="docs">
+      <a class="doc" href="docs/PEI_y_Manual_de_Convivencia_Colegio_SER.pdf" target="_blank" rel="noopener">
+        <span class="doc-ico" aria-hidden="true">PDF</span>
+        <span class="doc-txt"><b>PEI y Manual de Convivencia</b><small>Proyecto Educativo Institucional, con el Manual de Convivencia Escolar: derechos, deberes, normas y procedimientos.</small></span>
+        <span class="doc-go">Ver documento ↗</span>
+      </a>
+      <a class="doc" href="docs/Manual_de_Funciones_Colegio_SER.pdf" target="_blank" rel="noopener">
+        <span class="doc-ico" aria-hidden="true">PDF</span>
+        <span class="doc-txt"><b>Manual de Funciones</b><small>Estructura de la institución y funciones de cada cargo.</small></span>
+        <span class="doc-go">Ver documento ↗</span>
+      </a>
+      <a class="doc" href="https://ser.colegiosonline.com/index.php?id=6" target="_blank" rel="noopener">
+        <span class="doc-ico" aria-hidden="true">LEY</span>
+        <span class="doc-txt"><b>Ley de Transparencia</b><small>Todos los documentos publicados en el portal institucional.</small></span>
+        <span class="doc-go">Ir al portal ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="preguntas" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Preguntas frecuentes</span>
+    <h2 style="margin-top:10px">Lo que más nos preguntan los padres</h2>
+    <div class="faq">
+      <details><summary>¿Qué grados ofrecen?</summary><p>Primaria y bachillerato completos, de primero a once.</p></details>
+      <details><summary>¿Cuántos estudiantes hay por salón?</summary><p>Máximo 15. Así cada docente conoce el ritmo, las fortalezas y las dificultades de cada estudiante.</p></details>
+      <details><summary>¿Cuál es el horario de clases?</summary><p>Primaria de 7:00 a.m. a 1:00 p.m. y bachillerato de 7:00 a.m. a 1:30 p.m.</p></details>
+      <details><summary>¿El aula acuática hace parte de la jornada?</summary><p>Sí. Las clases en el aula acuática se hacen dentro del colegio, con acompañamiento de docentes.</p></details>
+      <details><summary>¿Cuánto cuesta la matrícula y la pensión?</summary><p>Esa información la entregamos de forma personal cuando visita el colegio. Escríbanos por WhatsApp y le agendamos una cita.</p></details>
+      <details><summary>¿Cómo es el proceso de admisión?</summary><p>Nos escribe, visita el colegio, diligencia el formulario de inscripción y tiene una entrevista con coordinación. Después se formaliza la matrícula.</p></details>
+      <details><summary>¿Dónde consulto las notas de mi hijo?</summary><p>En la <a href="https://colegiosonline.com/secure/paginas/?ie=ser" target="_blank" rel="noopener">plataforma de notas</a>, con el usuario que entrega el colegio.</p></details>
+      <details><summary>¿Dónde están ubicados?</summary><p>Calle 35B #22-33, sector Santa Paula, Girardot. <a href="https://maps.app.goo.gl/6H8UKqX22aBPqXqq9" target="_blank" rel="noopener">Ver en Google Maps</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contacto" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h2 style="margin-top:10px">Lo esperamos en Santa Paula</h2>
+    <div class="contact">
+      <div class="cbox"><h3>Dirección</h3><p>Calle 35B #22-33, sector Santa Paula<br>Girardot, Cundinamarca</p><p style="margin-top:10px"><a href="https://maps.app.goo.gl/6H8UKqX22aBPqXqq9" target="_blank" rel="noopener">Ver en Google Maps ↗</a></p></div>
+      <div class="cbox"><h3>WhatsApp y correo</h3><div class="copy"><code id="c-wa">300 533 4729</code><button type="button" data-copy="300 533 4729">Copiar</button></div><div class="copy"><code style="font-size:15px">colegiosergirardot@gmail.com</code><button type="button" data-copy="colegiosergirardot@gmail.com">Copiar</button></div><p style="margin-top:8px">Redes: <a href="https://www.instagram.com/colegiosergirardot/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@colegiosergirardot" target="_blank" rel="noopener">TikTok</a></p></div>
+      <div class="cbox"><h3>Atención al público</h3><ul><li>Lunes a viernes: 7:00 a.m. – 12:00 m. y 2:00 – 4:00 p.m.</li><li>Sábados: 9:00 a.m. – 12:00 m.</li><li>Domingos: cerrado</li></ul></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Colegio S.E.R.</b><br>Sistema Educativo Reintegrado · Girardot, Cundinamarca</div>
+    <div>Formamos mentes, transformamos futuros · <a href="#identidad" style="color:inherit">Quiénes somos</a> · <a href="#documentos" style="color:inherit">Documentos institucionales</a> · <a href="lectura-rapida.html" style="color:inherit">Lectura rápida</a></div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/573005334729?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Colegio%20S.E.R." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+(function(){
+  // menu
+  var t=document.getElementById('menu-toggle'),m=document.getElementById('menu');
+  t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');t.setAttribute('aria-expanded','false')}});
+  // hero video (respect reduced motion)
+  var v=document.getElementById('hero-video');
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){v.play().catch(function(){})}
+  // only one gallery video at a time
+  document.querySelectorAll('.vid video').forEach(function(el){el.addEventListener('play',function(){document.querySelectorAll('.vid video').forEach(function(o){if(o!==el)o.pause()})})});
+  // copy helper
+  function copy(text,btn){var done=function(){var o=btn.textContent;btn.textContent='Copiado';setTimeout(function(){btn.textContent=o},1600)};
+    try{navigator.clipboard.writeText(text).then(done,function(){sel(btn)})}catch(e){sel(btn)}}
+  function sel(btn){var c=btn.parentNode.querySelector('code,pre');if(!c)return;var r=document.createRange();r.selectNodeContents(c);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){copy(b.dataset.copy,b)})});
+  // admissions form -> WhatsApp
+  var f=document.getElementById('adm-form'),err=document.getElementById('f-err'),out=document.getElementById('wa-out');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var a=f.acudiente.value.trim(),tel=f.tel.value.replace(/[^\d+]/g,''),g=f.grado.value,st=f.estudiante.value.trim(),msg=f.msg.value.trim();
+    if(!a||tel.replace(/\D/g,'').length<7||!g){err.hidden=false;return}
+    err.hidden=true;
+    var text='Hola, quiero agendar una visita al Colegio S.E.R.\n• Acudiente: '+a+'\n• Teléfono: '+f.tel.value.trim()+'\n• Grado de interés: '+g+(st?'\n• Estudiante: '+st:'')+(msg?'\n• Mensaje: '+msg:'');
+    var url='https://wa.me/573005334729?text='+encodeURIComponent(text);
+    document.getElementById('wa-text').textContent=text;
+    var l=document.getElementById('wa-link');l.href=url;out.classList.add('show');
+    var w=null;try{w=window.open(url,'_blank','noopener')}catch(x){}
+    if(!w){l.focus()}
+  });
+  document.getElementById('wa-copy').addEventListener('click',function(){copy(document.getElementById('wa-text').textContent,this)});
+  // gallery filter + lightbox
+  var chips=document.querySelectorAll('.chip'),items=document.querySelectorAll('#gal button');
+  chips.forEach(function(c){c.addEventListener('click',function(){chips.forEach(function(o){o.setAttribute('aria-pressed',o===c)});var f=c.dataset.f;items.forEach(function(i){i.hidden=!(f==='all'||i.dataset.cat===f)})})});
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap');
+  items.forEach(function(i){i.addEventListener('click',function(){li.src=i.querySelector('img').src;li.alt=i.dataset.cap;lc.textContent=i.dataset.cap;if(lb.showModal)lb.showModal()})});
+  document.getElementById('lb-close').addEventListener('click',function(){lb.close()});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+  // efectos: aparición al hacer scroll, contadores y barra de progreso
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar=document.createElement('div');bar.id='scroll-progress';document.body.appendChild(bar);
+  var hdr=document.querySelector('header.top');
+  function onScroll(){var h=document.documentElement;var p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);bar.style.transform='scaleX('+Math.min(1,Math.max(0,p))+')';if(hdr)hdr.classList.toggle('scrolled',h.scrollTop>10)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  function countUp(el){var to=parseFloat(el.dataset.count),dec=(el.dataset.count.split('.')[1]||'').length,t0=null,dur=1300;
+    function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec).replace('.',',');if(k<1)requestAnimationFrame(step)}
+    requestAnimationFrame(step)}
+  if('IntersectionObserver' in window&&!reduce){
+    var sel='.pillar,.exp .card,.level,.vid,.medal,.steps li,.icard,.doc,.check li,.gal button,.bach-slide,.faq details';
+    var vh=window.innerHeight;
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var el=en.target;el.classList.add('in');io.unobserve(el);el.querySelectorAll('[data-count]').forEach(countUp)}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll(sel).forEach(function(el){if(el.getBoundingClientRect().top>vh){var sib=[].indexOf.call(el.parentNode.children,el)%4;el.style.transitionDelay=(sib*90)+'ms';el.classList.add('rv');io.observe(el)}});
+  }
+  // carrusel de bachillerato
+  var bt=document.getElementById('bach-track');
+  if(bt){var bs=[].slice.call(bt.querySelectorAll('.bach-slide')),bc=document.getElementById('bach-count'),bd=document.getElementById('bach-dots');
+    bd.innerHTML=bs.map(function(){return '<i></i>'}).join('');var dots=bd.children;
+    function cur(){var x=bt.scrollLeft,best=0,bdist=1e9;bs.forEach(function(s,i){var d=Math.abs(s.offsetLeft-bt.offsetLeft-x);if(d<bdist){bdist=d;best=i}});return best}
+    function upd(){var i=cur();bc.textContent=(i+1)+' / '+bs.length;for(var k=0;k<dots.length;k++)dots[k].className=k===i?'on':''}
+    function go(i){i=(i+bs.length)%bs.length;bt.scrollTo({left:bs[i].offsetLeft-bt.offsetLeft,behavior:reduce?'auto':'smooth'})}
+    document.getElementById('bach-prev').addEventListener('click',function(){go(cur()-1)});
+    document.getElementById('bach-next').addEventListener('click',function(){go(cur()+1)});
+    bt.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(cur()+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur()-1)}});
+    var tm;bt.addEventListener('scroll',function(){clearTimeout(tm);tm=setTimeout(upd,80)},{passive:true});upd();
+    bs.forEach(function(s){s.querySelector('.bach-open').addEventListener('click',function(){var im=s.querySelector('img');li.src=im.src;li.alt=s.dataset.cap;lc.textContent=s.dataset.cap;if(lb.showModal)lb.showModal()})});
+  }
+})();
+</script>
+</body></html>

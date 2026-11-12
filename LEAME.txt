@@ -1,0 +1,4 @@
+PÁGINA WEB – COLEGIO S.E.R.
+Para publicarla en un dominio propio, entregue esta carpeta completa (index.html + img + video) a su proveedor de hosting.
+Se puede alojar gratis en Netlify, Cloudflare Pages o GitHub Pages arrastrando la carpeta.
+Para verla en su computador: doble clic en index.html.
